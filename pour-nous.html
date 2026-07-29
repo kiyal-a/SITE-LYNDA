@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pour nous</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- ============= CODE D'ACCES ============= -->
+<div id="gate">
+  <div class="gate-card">
+    <svg class="flourish" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin:0 auto;display:block;">
+      <path d="M2 20 C 25 2, 45 2, 60 20 C 75 2, 95 2, 118 20" stroke="#C6A15B" stroke-width="1.2"/>
+      <circle cx="60" cy="20" r="3" fill="#C6A15B"/>
+    </svg>
+    <p class="eyebrow">Espace privé</p>
+    <h1>Notre espace</h1>
+    <p class="sub">Entre le code pour y accéder.</p>
+    <form id="pw-form">
+      <input id="pw-input" type="password" placeholder="Code d'accès" autocomplete="off">
+      <button id="pw-submit" type="submit">Accéder</button>
+      <div id="pw-error"></div>
+    </form>
+  </div>
+</div>
+
+<!-- ============= PAGE POUR NOUS ============= -->
+<div id="site">
+
+  <a href="index.html" class="us-nav" aria-label="Retour à l'accueil">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 6l-6 6 6 6" stroke="#6E2A38" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Retour</span>
+  </a>
+
+  <section id="hero" style="min-height:60vh;">
+    <p class="eyebrow">Rien que nous deux</p>
+    <h1>Elle <span class="script" style="font-size:.6em;">&amp;</span> <span class="name">Moi</span></h1>
+    <p class="tag">Le petit espace où l'on garde nos souvenirs, et une lettre qui n'attend que toi.</p>
+    <svg class="flourish" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 20 C 25 2, 45 2, 60 20 C 75 2, 95 2, 118 20" stroke="#C6A15B" stroke-width="1.2"/>
+      <circle cx="60" cy="20" r="3" fill="#C6A15B"/>
+    </svg>
+  </section>
+
+  <section id="gallery">
+    <div class="section-head">
+      <p class="eyebrow">Souvenirs</p>
+      <h2>Elle &amp; moi</h2>
+    </div>
+    <div class="grid">
+      <div class="frame" data-type="image" data-src="media/pour-nous/photo_1.jpg" data-caption="Un joli souvenir à nous">
+        <img src="media/pour-nous/photo_1.jpg" alt="">
+      </div>
+      <div class="frame" data-type="image" data-src="media/pour-nous/photo_2.jpg" data-caption="Un joli souvenir à nous">
+        <img src="media/pour-nous/photo_2.jpg" alt="">
+      </div>
+      <div class="frame" data-type="image" data-src="media/pour-nous/photo_6.jpg" data-caption="Un joli souvenir à nous">
+        <img src="media/pour-nous/photo_6.jpg" alt="">
+      </div>
+      <div class="frame" data-type="image" data-src="media/pour-nous/photo_7.jpg" data-caption="Un joli souvenir à nous">
+        <img src="media/pour-nous/photo_7.jpg" alt="">
+      </div>
+      <div class="frame" data-type="video" data-src="media/pour-nous/video_3.mp4" data-poster="media/pour-nous/video_3_poster.jpg" data-caption="Un joli souvenir à nous">
+        <img src="media/pour-nous/video_3_poster.jpg" alt="">
+        <span class="play-badge">▶</span>
+      </div>
+      <div class="frame" data-type="video" data-src="media/pour-nous/video_4.mp4" data-poster="media/pour-nous/video_4_poster.jpg" data-caption="Un joli souvenir à nous">
+        <img src="media/pour-nous/video_4_poster.jpg" alt="">
+        <span class="play-badge">▶</span>
+      </div>
+      <div class="frame" data-type="video" data-src="media/pour-nous/video_5.mp4" data-poster="media/pour-nous/video_5_poster.jpg" data-caption="Un joli souvenir à nous">
+        <img src="media/pour-nous/video_5_poster.jpg" alt="">
+        <span class="play-badge">▶</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="letter-section">
+    <p class="eyebrow">Pour finir</p>
+    <h2>Lire la lettre</h2>
+    <p class="hint">Clique sur l'enveloppe pour l'ouvrir</p>
+
+    <div class="envelope-wrap" id="envelope-wrap">
+      <div class="envelope">
+        <div class="envelope-body">Pour Lynda</div>
+        <div class="flap"></div>
+        <div class="seal"><span>K</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan-date">
+    <div class="section-head">
+      <p class="eyebrow">Envie de se voir ?</p>
+      <h2>Planifier un date</h2>
+    </div>
+
+    <div class="date-card">
+      <svg class="flourish small" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin:0 auto 20px;display:block;">
+        <path d="M2 20 C 25 2, 45 2, 60 20 C 75 2, 95 2, 118 20" stroke="#C6A15B" stroke-width="1.2"/>
+        <circle cx="60" cy="20" r="3" fill="#C6A15B"/>
+      </svg>
+
+      <form id="date-form" class="date-form">
+        <div class="field">
+          <label for="date-who">Qui propose ?</label>
+          <select id="date-who" required>
+            <option value="" disabled selected>Choisis...</option>
+            <option value="Kiyala">Kiyala</option>
+            <option value="Lynda">Lynda</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="date-day">Date</label>
+            <input type="date" id="date-day" required>
+          </div>
+          <div class="field">
+            <label for="date-time">Heure</label>
+            <input type="time" id="date-time" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="date-place">Lieu</label>
+          <input type="text" id="date-place" placeholder="Ex: Au glacier" required>
+        </div>
+
+        <button type="submit" id="date-submit">Envoyer l'invitation</button>
+        <p id="date-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>Fait avec amour, pour toi, par Kiyala.</footer>
+</div>
+
+<!-- ============= PHOTO LIGHTBOX ============= -->
+<div id="photo-overlay">
+  <div class="photo-box">
+    <button class="close-btn" id="close-photo">✕</button>
+    <div class="photo-frame" id="photo-frame-large">
+      <div class="mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#6E2A38" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg>
+      </div>
+    </div>
+    <p class="photo-caption" id="photo-caption"></p>
+  </div>
+</div>
+
+<!-- ============= LETTER OVERLAY ============= -->
+<div id="letter-overlay">
+  <div class="letter-paper">
+    <button class="close-letter" id="close-letter">✕</button>
+    <p class="eyebrow">Ma Lynda</p>
+    <h2>Joyeux Anniversaire</h2>
+    <div class="body-text">Ma chère Lynda,
+
+Aujourd'hui, c'est ton jour, et je voulais qu'il commence par quelque chose qui te fasse sourire.
+
+Il y a des personnes qui traversent une vie sans vraiment la changer, et puis il y a toi — qui rends chaque jour un peu plus léger, un peu plus doux, juste en étant là. Ta présence a cette manière discrète de tout rendre meilleur, même les journées les plus banales.
+
+Je pense à tout ce que nous avons déjà vécu ensemble, aux fous rires, aux petites habitudes qu'on s'est inventées, à tout ce qu'il nous reste encore à découvrir. Chaque année qui passe avec toi me donne juste plus envie de voir la suivante.
+
+Alors aujourd'hui, j'espère que tu prends un moment pour toi, pour te rappeler à quel point tu comptes — pour moi, et pour tous ceux qui ont la chance de te connaître.
+
+Joyeux anniversaire, ma belle. Que cette nouvelle année t'apporte tout ce que tu mérites, et un peu plus encore.</div>
+    <div class="sign-off">— Kiyala</div>
+  </div>
+</div>
+
+<script src="js/pour-nous.js"></script>
+</body>
+</html>

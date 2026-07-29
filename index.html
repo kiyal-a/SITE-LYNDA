@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joyeux Anniversaire, Lynda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============= PASSWORD GATE ============= -->
+<div id="gate">
+  <div class="gate-card">
+    <svg class="flourish" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin:0 auto;display:block;">
+      <path d="M2 20 C 25 2, 45 2, 60 20 C 75 2, 95 2, 118 20" stroke="#C6A15B" stroke-width="1.2"/>
+      <circle cx="60" cy="20" r="3" fill="#C6A15B"/>
+    </svg>
+    <p class="eyebrow">Accès privé</p>
+    <h1>Un secret&nbsp;t'attend</h1>
+    <p class="sub">Ce petit coin du web n'est que pour toi, Lynda.</p>
+    <form id="pw-form">
+      <input id="pw-input" type="password" placeholder="Mot de passe" autocomplete="off">
+      <button id="pw-submit" type="submit">Entrer</button>
+      <div id="pw-error"></div>
+    </form>
+  </div>
+</div>
+
+<!-- ============= MAIN SITE ============= -->
+<div id="site">
+
+  <a href="pour-nous.html" class="us-nav" id="us-nav" aria-label="Accéder à notre espace">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 20.5c-.3 0-.6-.1-.8-.3-1.9-1.5-3.7-3-5.1-4.5C4 13.4 3 11.7 3 9.9 3 7.5 4.9 5.6 7.3 5.6c1.3 0 2.6.6 3.5 1.6.3.3.6.7.9 1.1.6-.9 1.5-1.6 2.5-2 .5-.2 1-.3 1.5-.3 2.4 0 4.3 1.9 4.3 4.3 0 1.8-1 3.5-3.1 5.8-1.4 1.5-3.2 3-5.1 4.5-.2.2-.5.3-.8.3z" stroke="#6E2A38" stroke-width="1.3" fill="none"/>
+    </svg>
+    <span>Pour nous</span>
+  </a>
+
+  <section id="hero">
+    <p class="eyebrow">Joyeux Anniversaire mon coeur </p>
+    <h1> Juste Pour toi <span class="name">Lynda</span></h1>
+    <p class="tag">Une page rien que pour célébrer la personne que tu es — aujourd'hui et chaque jour qui suit.</p>
+    <svg class="flourish" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 20 C 25 2, 45 2, 60 20 C 75 2, 95 2, 118 20" stroke="#C6A15B" stroke-width="1.2"/>
+      <circle cx="60" cy="20" r="3" fill="#C6A15B"/>
+    </svg>
+  </section>
+
+  <section id="gallery">
+    <div class="section-head">
+      <p class="eyebrow">Souvenirs</p>
+      <h2>Nos plus beaux moments</h2>
+    </div>
+
+    <div class="gallery-group">
+      <h3>Elle, tout simplement</h3>
+      <div class="grid">
+         <div class="frame" data-type="image" data-src="media/accueil/photo_2.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/photo_2.jpg" alt="">
+        </div>
+         <div class="frame" data-type="image" data-src="media/accueil/photo_3.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/photo_3.jpg" alt="">
+        </div>
+        
+        <div class="frame" data-type="image" data-src="media/accueil/photo_1.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/photo_1.jpg" alt="">
+        </div>
+       
+       <div class="frame" data-type="video" data-src="media/accueil/video_2.mp4" data-poster="media/accueil/video_2_poster.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/video_2_poster.jpg" alt="">
+          <span class="play-badge">▶</span>
+        </div>
+       <div class="frame" data-type="video" data-src="media/accueil/video_2.mp4" data-poster="media/accueil/video_1_poster.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/video_1_poster.jpg" alt="">
+          <span class="play-badge">▶</span>
+        </div>
+       <div class="frame" data-type="video" data-src="media/accueil/video_3.mp4" data-poster="media/accueil/video_3_poster.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/video_3_poster.jpg" alt="">
+          <span class="play-badge">▶</span>
+        </div>
+       <div class="frame" data-type="video" data-src="media/accueil/video_4.mp4" data-poster="media/accueil/video_4_poster.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/video_4_poster.jpg" alt="">
+          <span class="play-badge">▶</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-group">
+      <h3>Avec ceux qu'elle aime</h3>
+      <div class="grid">
+        <div class="frame" data-type="image" data-src="media/accueil/photo_4.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/photo_4.jpg" alt="">
+        </div>
+        <div class="frame" data-type="video" data-src="media/accueil/video_6.mp4" data-poster="media/accueil/video_6_poster.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/video_6_poster.jpg" alt="">
+          <span class="play-badge">▶</span>
+        </div>
+         <div class="frame" data-type="video" data-src="media/pour-nous/video_5.mp4" data-poster="media/pour-nous/video_5_poster.jpg" data-caption="Un joli souvenir">
+          <img src="media/pour-nous/video_5_poster.jpg" alt="">
+          <span class="play-badge">▶</span>
+        </div>
+        <div class="frame" data-type="video" data-src="media/accueil/video_5.mp4" data-poster="media/accueil/video_5_poster.jpg" data-caption="Un joli souvenir">
+          <img src="media/accueil/video_5_poster.jpg" alt="">
+          <span class="play-badge">▶</span>
+        </div>
+       
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>Fait avec amour, pour toi, par Kiyala.</footer>
+</div>
+
+<!-- ============= PHOTO LIGHTBOX ============= -->
+<div id="photo-overlay">
+  <div class="photo-box">
+    <button class="close-btn" id="close-photo">✕</button>
+    <div class="photo-frame" id="photo-frame-large">
+      <div class="mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#6E2A38" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg>
+      </div>
+    </div>
+    <p class="photo-caption" id="photo-caption"></p>
+  </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
