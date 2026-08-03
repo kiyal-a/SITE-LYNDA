@@ -92,7 +92,7 @@ const EMAILJS_TEMPLATE_ID = "template_5qax7lh";
 // Astuce : pendant tes tests, mets TA propre adresse dans les deux lignes.
 // Tu remplaceras par la vraie adresse de Lynda seulement quand tu seras prêt.
 const EMAIL_KIYALA = "kiyalasilue1@gmail.com";
-const EMAIL_LYNDA = "kiyalasilue1@gmail.com";
+const EMAIL_LYNDA = "broulynda11@gmail.com";
 
 if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== "À_COMPLÉTER") {
   emailjs.init(EMAILJS_PUBLIC_KEY);
